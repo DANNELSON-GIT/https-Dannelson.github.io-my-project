@@ -1,16 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shawarma Delight</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
 </head>
 <style>
-  .cont{
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .navbar {
+      height:auto;
+      position:absolute;
+      
+  
+    }
+    .navbar-brand {
+      color: #e27b3aff !important;
+      font-weight: 700;
+    }
+    
+    .hero {
+      background: url('image/shawarma-on-transparent-background-1.png') center/cover no-repeat;
+      height:800px;
+      color: white;
+      text-align: center;
+      padding: 160px 0;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero h1, .hero p, .hero a {
+      position: relative;
+      z-index: 1;
+    }
+    .menu-card img {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    footer {
+      background: black;
+      color: #ccc;
+      padding: 40px 0;
+    }
+    footer a {
+      color: #0f0cc9ff;
+      text-decoration: none;
+    }
+    .nav-link{
+        color:black;
+    }
+    .nav-link:hover{
+    
+        color: #e27b3aff;
+        text-decoration:none;
+   
+        
+    }
+    .warning{
+        color: #e27b3aff;
+        border:none;
+    }
+    .warning1{
+        background-color: #e27b3aff;
+        border:none;
+    }
+    .warning0{
+        width:100%;
+        background-color: #e27b3aff;
+        border:none;
+    }
+    .bot{
+        border:none;
+        background-color: #e27b3aff;
+    }
+    .bot:hover{
+        border:none;
+        background-color: #413704ff;
+    }
+    .foot{
+        width:100%;
+        height:70px;
+        position:absolute;
+    }
+    .none{
+        text-decoration:none;
+    }
+    .present{
+        
+        font-size:40px;
+        
+    }
+    .present1{
+        
+        font-size:70px;
+        
+    }
+    .mt{
+        margin-top:180px;
+    }
+    
+    .abs{
+      width: 100%;
+      height:400px;
+      background:url("image/lambshawarma.jpeg");
+      background-size:cover;
+      position:relative;
+    }
+    .abs1{
+      width:100%;
+      height:400px;
+      background-color:black;
+      padding-top:60px;
+      color:white;
+      opacity: 0.8;
+      position:absolute;
+    }
+    .bea{
+      width:7%;
+      height:30px;
+    }
+    a{
+      text-decoration:none;
+      
+    }
+    .men{
+      transition: 0.3s ease;
+    }
+    .men:hover{
+     transform: translateY(-8px);
+    }
+    .abt{
+     width:100%;
+     height:200px;
+     text-align:center;
+     padding-top:80px;
+     
+    }
+    .brand{
+        width:100%;
+        height:60px;
+        color: #e27b3aff;
+        padding-left:30px;
+        padding-top:15px;
+
+}
+.for{
+    font-size:30px;
+    color:white;
+}
+.small{
+    font-size:10px;
+    color:white;
+     }
+
+     .small:hover{
+    font-size:10px;
+    color: #e27b3aff;
+     }
+     .red{
+        width:100%;
+        height:200px;
+        position:relative;
+        background:url("image/lambshawarma.jpeg");
+     }
+     .red1{
+        width: 100%;
+        height:200px;
+        position:absolute;
+        background-color:black;
+        opacity:0.8;
+
+     }
+    .cont{
         animation: fadeIn 0.6s ease;
     }
 
@@ -20,95 +192,37 @@
         }
 </style>
 <body>
- 
- <!-- Hero -->
-  <section id="home" class="hero d-flex flex-column justify-content-center align-items-center">
-    <div class="container">
+    <div class="brand">
+            <b>
+                Shawarma_Delight
+            </b>
+        </div>
         
-    <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom">
-    <div class="container">
-      <a class="navbar-brand" href="#">Shawarma_Delight</a>
-      <button class="navbar-toggler bot" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="index.html">
-              <b>
-                Home
-              </b>
-            </a>
-          </li>
+        
+     <div class="red">
+        <div class="red1">
+              
+            <div class="abt">
+                <b class="for">
+                    Menu
+                </b><br>
+                <div>
+                    <a class="small" href="index.html">
+                        Home
+                    </a>
+                     <i class="fa fa-arrow"></i> 
+                    <a class="small" href="menu.html">
+                        Menu
+                    </a>
+                </div>
+            </div>
+            
+        
+        </div>
+     </div>
 
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="about.html">
-              <b>
-                About
-              </b>
-            </a>
-          </li>
 
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="menu.html">
-              <b>
-                Menu
-              </b>
-            </a>
-          </li>
-
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="contact.html">
-              <b>
-                Contact
-              </b>
-            </a>
-          </li>
-
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="login.html">
-            <i class="fa-solid fa-user"></i>
-
-              <b>
-                Login
-              </b>
-            </a>
-          </li>
-
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="register.html">
-              <b>
-                Register
-              </b>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-
-      <h1 class="display-4 fw-bold">Taste the Best Shawarma in Town!</h1>
-      <p class="lead">Freshly made. Perfectly grilled. Unforgettable flavor.</p>
-      <a href="menu.html" class=" warning1 btn btn-warning btn-lg mt-3">Explore Menu</a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-5 text-center">
-    <div class="container">
-      <h2 class="fw-bold mb-4">About Us</h2>
-      <p class="text-muted">
-        At <strong>Shawarma Delight</strong>, we bring you the authentic Middle Eastern shawarma experience — 
-        juicy meats, fresh veggies, and our signature sauces that make every bite irresistible.
-      </p>
-    </div>
-  </section>
-
-  
-  <!-- Menu -->
+    <!-- Menu -->
   <section id="menu" class="py-5 bg-light">
     <div class="container text-center">
       <h2 class="fw-bold mb-5">Our Menu</h2>
@@ -210,84 +324,8 @@
     </div>
   </section>
 
-  <div class="container mt-4">
-    <div class="row cont">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-            <img src="image/chicken-shawarma-12-1024x1536.jpg" width="100%" height="750" alt="">
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 text-center mt border-top">
-                <b class="present">Present</b><br>
-                <b class="present1">Beef & chicken</b><br>
-                <b class="present1" style=color:red>shawarma</b><br>
-                <b>OUR SIGNATURE HANDMADE shawarma</b><br>
 
-                This is truly the best beef & chicken shawarma available! 
-                The beef and chicken patties are healthy, 
-                loaded with fresh herbs, and full of flavor 
-                with the perfect blend of seasonings.
-
-
-                <div><a href="#" class="btn btn-warning warning1 mt-5">Order Now</a></div>
-                
-        </div>
-        
-    </div>
-
-    <div class="row">
-        
-        <div class="col-sm-12 col-md-6 col-lg-6 text-center mt border-top">
-                <b class="present">Present</b><br>
-                <b class="present1">Tasteful</b><br>
-                <b class="present1" style=color:red>Pizza</b><br>
-                <b>OUR SIGNATURE HANDMADE Pizza</b><br>
-
-                This is truly the best Pizza available! 
-                The ingredients for this pizza are healthy, 
-                loaded with fresh herbs, and full of flavor 
-                with the perfect blend of seasonings.
-
-
-                <div><a href="#" class="btn btn-warning warning1 mt-5 mb-3">Order Now</a></div>
-                
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-6">
-            <img src="image/tomato-mozzarella-pizza-FT-RECIPE0725-e7244e979c504188a049623668c15b2e.webp" width="100%" height="650" alt="">
-        </div>
-        
-    </div>
-  </div>
-
-  <!-- Testimonials -->
-  <section class=" mt-5 mb-3 py-5 text-center">
-    <div class="container">
-      <h2 class="fw-bold mb-4">What Our Customers Say</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="p-4 border rounded shadow-sm men">
-            <p>"Best shawarma I’ve ever had! The sauce is out of this world!"</p>
-            <h6 class="fw-bold warning">— Sarah K.</h6>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-4 border rounded shadow-sm men">
-            <p>"Friendly staff and amazing food. Always coming back for more!"</p>
-            <h6 class="fw-bold warning">— James D.</h6>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="p-4 border rounded shadow-sm men">
-            <p>"Perfectly grilled shawarma with fresh ingredients every time."</p>
-            <h6 class="fw-bold warning">— Aisha M.</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  
-      <div class="abs">
+    <div class="abs">
         <div class="abs1 text-center">
           <div class="container-fluid">
             <div class="row">
@@ -369,32 +407,7 @@
         </div>
 
       </div>
-      
-   
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-  const hero = document.querySelector('.hero');
-
-  // Your hero background images
-  const images = [
-    "image/shawarma-on-transparent-background-1.png",
-    "image/chicken-shawarma-12-1024x1536.jpg"
-  ];
-
-  let index = 0;
-
-  function changeHeroImage() {
-    index = (index + 1) % images.length;
-    hero.style.backgroundImage = `url('${images[index]}')`;
-  }
-
-  // Change image every 4 seconds
-  setInterval(changeHeroImage, 4000);
-</script>
-
-
-  
+     
+    
 </body>
 </html>
